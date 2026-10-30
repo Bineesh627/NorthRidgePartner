@@ -1,9 +1,14 @@
 import logo from '../assets/herambition-logo.webp';
+import bg from '../assets/herambition-bg.jpg';
+
+const HERAMBITION_URL = 'https://her-ambition-zeta.vercel.app';
 
 export default function HerAmbition() {
   return (
     <section className="herambition" id="herambition">
-      <div className="container-fluid p-0 h-100">
+      <img className="her-bg" src={bg} alt="" aria-hidden="true" />
+      <div className="her-overlay"></div>
+      <div className="container-fluid p-0 h-100 her-content">
         <div className="row g-0 align-items-center h-100">
           <div className="col-12 col-lg-4 col-text ps-5">
             <p className="small-label">Our Social Initiative</p>
@@ -26,7 +31,7 @@ export default function HerAmbition() {
               We connect talented women with opportunities, support their return to the
               workplace and partner with businesses to build more inclusive teams.
             </p>
-            <a href="#herambition">
+            <a href={HERAMBITION_URL} target="_blank" rel="noopener noreferrer">
               Learn More About HerAmbition <i className="bi bi-arrow-right ms-1"></i>
             </a>
           </div>

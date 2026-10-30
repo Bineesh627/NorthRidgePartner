@@ -590,3 +590,24 @@
 @media (min-width: 992px) and (max-width: 1199.98px) { .why-item h6 { min-height: calc(2 * 1.3em); } }
 .why-item p { font-size: 0.78rem; line-height: 1.5; }
 @media (max-width: 991.98px) { .why-section { padding: 3rem 0; } }
+
+
+/* ===== HerAmbition: photo background with pink image effect ===== */
+.herambition { position: relative; background: #b8486b; }
+.herambition .her-bg {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: cover; object-position: center 10%; z-index: 0;
+}
+.herambition .her-overlay {
+    position: absolute; inset: 0; z-index: 1;
+    background:
+        linear-gradient(90deg, rgba(168, 56, 92, 0.90) 0%, rgba(190, 78, 108, 0.74) 38%, rgba(190, 78, 108, 0.62) 50%, rgba(190, 78, 108, 0.74) 62%, rgba(168, 56, 92, 0.90) 100%);
+}
+.herambition .her-content { position: relative; z-index: 2; }
+.herambition .col-text { text-shadow: 0 1px 8px rgba(80, 15, 40, 0.35); }
+.herambition .col-text a { display: inline-block; transition: transform 0.2s ease; }
+.herambition .col-text a:hover { transform: translateX(3px); text-decoration: underline; }
+@media (min-width: 992px) { .herambition { height: 300px; } }
+@media (max-width: 991.98px) {
+    .herambition .her-overlay { background: linear-gradient(180deg, rgba(168, 56, 92, 0.88) 0%, rgba(190, 78, 108, 0.72) 50%, rgba(168, 56, 92, 0.88) 100%); }
+}

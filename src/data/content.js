@@ -3,6 +3,12 @@ import industry1 from '../assets/industry-1.jpg';
 import industry2 from '../assets/industry-2.jpg';
 import industry3 from '../assets/industry-3.jpg';
 
+// Contact email used by the "Book a Discovery Call" buttons
+export const CONTACT_EMAIL = 'Northridgepartner@gmail.com';
+export const DISCOVERY_CALL_SUBJECT = 'Discovery Call Request';
+export const DISCOVERY_CALL_BODY =
+  'Hi North Ridge Partner team,\n\nI would like to book a discovery call.\n\nName:\nCompany:\nPhone:\nPreferred date & time:\n\nThank you.';
+
 // `href` must match the `id` of a section on the page.
 // Keep this list in the same order as the sections appear on the page (top to bottom).
 export const NAV_LINKS = [

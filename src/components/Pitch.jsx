@@ -1,3 +1,5 @@
+import { DISCOVERY_CALL_MAILTO, handleDiscoveryCallClick } from '../utils/discoveryCall';
+
 export default function Pitch() {
   return (
     <section className="pitch" id="partnership">
@@ -11,7 +13,7 @@ export default function Pitch() {
             We partner with AI companies, fintech firms, and startups to solve their most
             critical challenge&mdash;hiring the right talent to scale with confidence.
           </p>
-          <a href="#contact" className="pitch-btn">
+          <a href={DISCOVERY_CALL_MAILTO} className="pitch-btn" onClick={handleDiscoveryCallClick}>
             Book a Discovery Call
           </a>
         </div>
