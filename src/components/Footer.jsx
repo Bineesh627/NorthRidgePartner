@@ -1,4 +1,4 @@
-import { NAV_LINKS } from '../data/content';
+import { NAV_LINKS, LINKEDIN_URL } from '../data/content';
 import logo from '../assets/logo-full.png';
 
 export default function Footer() {
@@ -23,8 +23,8 @@ export default function Footer() {
           </div>
 
           <div className="col-12 col-lg-2 text-center text-lg-end mt-3 mt-lg-0">
-            {/* TODO: replace "#" with the real social profile URLs */}
-            <a href="#" className="social-sq me-2" style={{ background: '#0a66c2' }} aria-label="LinkedIn">
+            {/* TODO: replace "#" on the Instagram icon with the real profile URL */}
+            <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" className="social-sq me-2" style={{ background: '#0a66c2' }} aria-label="LinkedIn">
               <i className="bi bi-linkedin"></i>
             </a>{' '}
             <a href="#" className="social-sq" style={{ background: 'var(--navy)' }} aria-label="Instagram">

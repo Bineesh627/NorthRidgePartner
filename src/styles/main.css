@@ -611,3 +611,9 @@
 @media (max-width: 991.98px) {
     .herambition .her-overlay { background: linear-gradient(180deg, rgba(168, 56, 92, 0.88) 0%, rgba(190, 78, 108, 0.72) 50%, rgba(168, 56, 92, 0.88) 100%); }
 }
+
+
+/* ===== Contact CTA buttons: keep labels on one line on desktop ===== */
+@media (min-width: 992px) {
+    .footer-cta .btn-rect { white-space: nowrap; padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
+}

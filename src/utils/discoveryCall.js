@@ -1,4 +1,10 @@
-import { CONTACT_EMAIL, DISCOVERY_CALL_SUBJECT, DISCOVERY_CALL_BODY } from '../data/content';
+import {
+  CONTACT_EMAIL,
+  DISCOVERY_CALL_SUBJECT,
+  DISCOVERY_CALL_BODY,
+  HIRING_BRIEF_SUBJECT,
+  HIRING_BRIEF_BODY,
+} from '../data/content';
 
 const enc = encodeURIComponent;
 
@@ -21,4 +27,16 @@ export function handleDiscoveryCallClick(e) {
   const win = window.open(DISCOVERY_CALL_GMAIL, '_blank');
   if (win) win.opener = null; // safety: the new tab can't control this page
   else window.location.href = DISCOVERY_CALL_GMAIL; // popup blocked -> open in same tab
+}
+
+// ----- Submit a Hiring Brief (same behaviour, different subject + template) -----
+export const HIRING_BRIEF_MAILTO = `mailto:${CONTACT_EMAIL}?subject=${enc(HIRING_BRIEF_SUBJECT)}&body=${enc(HIRING_BRIEF_BODY)}`;
+export const HIRING_BRIEF_GMAIL = `https://mail.google.com/mail/?view=cm&fs=1&to=${enc(CONTACT_EMAIL)}&su=${enc(HIRING_BRIEF_SUBJECT)}&body=${enc(HIRING_BRIEF_BODY)}`;
+
+export function handleHiringBriefClick(e) {
+  if (isMobile()) return;
+  e.preventDefault();
+  const win = window.open(HIRING_BRIEF_GMAIL, '_blank');
+  if (win) win.opener = null;
+  else window.location.href = HIRING_BRIEF_GMAIL;
 }

@@ -4,7 +4,11 @@ import industry2 from '../assets/industry-2.jpg';
 import industry3 from '../assets/industry-3.jpg';
 
 // Contact email used by the "Book a Discovery Call" buttons
-export const CONTACT_EMAIL = 'Northridgepartner@gmail.com';
+export const CONTACT_EMAIL = 'northridgepartner@gmail.com';
+export const LINKEDIN_URL = 'https://www.linkedin.com/company/northridgepartner/';
+export const HIRING_BRIEF_SUBJECT = 'Hiring Brief Submission';
+export const HIRING_BRIEF_BODY =
+  'Hi North Ridge Partner team,\n\nPlease find our hiring brief below.\n\nCompany name:\nContact person & phone:\nRole(s) to hire:\nNumber of positions:\nLocation / work mode (onsite, hybrid, remote):\nExperience level:\nKey skills required:\nBudget / salary range:\nExpected joining timeline:\nAdditional notes:\n\nThank you.';
 export const DISCOVERY_CALL_SUBJECT = 'Discovery Call Request';
 export const DISCOVERY_CALL_BODY =
   'Hi North Ridge Partner team,\n\nI would like to book a discovery call.\n\nName:\nCompany:\nPhone:\nPreferred date & time:\n\nThank you.';
