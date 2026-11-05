@@ -7,7 +7,7 @@ export default function WhyChoose() {
         <div className="row align-items-center g-4 g-lg-5">
           <div className="col-12 col-lg-3">
             <p className="eyebrow">Why Clients Choose Us</p>
-            <h2 className="section-title" style={{ fontSize: '1.9rem' }}>
+            <h2 className="section-title">
               A Partner You Can Trust.
             </h2>
           </div>

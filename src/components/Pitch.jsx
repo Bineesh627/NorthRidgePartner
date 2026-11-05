@@ -14,7 +14,7 @@ export default function Pitch() {
             critical challenge&mdash;hiring the right talent to scale with confidence.
           </p>
           <a href={DISCOVERY_CALL_MAILTO} className="pitch-btn" onClick={handleDiscoveryCallClick}>
-            Book a Discovery Call
+            Talk to our Strategic Talent Partner
           </a>
         </div>
       </div>

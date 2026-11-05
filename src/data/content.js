@@ -10,6 +10,10 @@ export const DISCOVERY_CALL_SUBJECT = 'Discovery Call Request';
 export const DISCOVERY_CALL_BODY =
   'Hi North Ridge Partner team,\n\nI would like to book a discovery call.\n\nName:\nCompany:\nPhone:\nPreferred date & time:\n\nThank you.';
 
+export const HIRING_SUBJECT = 'Hiring Requirement';
+export const HIRING_BODY =
+  'Hi North Ridge Partner team,\n\nI would like to share a hiring requirement.\n\nName:\nCompany:\nPhone:\nRole(s) to hire:\nNumber of positions:\nLocation:\nTimeline:\n\nThank you.';
+
 // `href` must match the `id` of a section on the page.
 // Keep this list in the same order as the sections appear on the page (top to bottom).
 export const NAV_LINKS = [

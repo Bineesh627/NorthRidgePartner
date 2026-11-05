@@ -1,4 +1,5 @@
 import heroImg from '../assets/hero.jpg';
+import { DISCOVERY_CALL_MAILTO, HIRING_MAILTO, handleDiscoveryCallClick, handleHiringClick } from '../utils/discoveryCall';
 import { HERO_STATS } from '../data/content';
 
 export default function Hero() {
@@ -28,11 +29,11 @@ export default function Hero() {
             </p>
 
             <div className="d-flex flex-wrap gap-3 mb-4">
-              <a href="#contact" className="btn btn-primary btn-rect">
-                Discuss a Hiring Requirement <i className="bi bi-arrow-right ms-1"></i>
+              <a href={DISCOVERY_CALL_MAILTO} className="btn btn-primary btn-rect" onClick={handleDiscoveryCallClick}>
+                Talk to our Strategic Talent Partner <i className="bi bi-arrow-right ms-1"></i>
               </a>
-              <a href="#services" className="btn btn-outline-light btn-rect px-4">
-                Explore Our Services
+              <a href={HIRING_MAILTO} className="btn btn-outline-light btn-rect px-4" onClick={handleHiringClick}>
+                Share a Hiring Requirement
               </a>
             </div>
 

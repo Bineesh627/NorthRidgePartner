@@ -13,7 +13,7 @@ export default function HerAmbition() {
           <div className="col-12 col-lg-4 col-text ps-5">
             <p className="small-label">Our Social Initiative</p>
             <h2>HerAmbition</h2>
-            <p className="mb-0" style={{ fontSize: '0.88rem' }}>
+            <p className="mb-0">
               Championing women's career comebacks and creating pathways to leadership.
             </p>
           </div>

@@ -7,7 +7,7 @@ export default function Testimonials() {
         <div className="row align-items-center">
           <div className="col-12 col-lg-4 mb-4 mb-lg-0">
             <p className="eyebrow">What Our Clients Say</p>
-            <h2 className="section-title" style={{ fontSize: '1.9rem' }}>
+            <h2 className="section-title">
               Trusted by
               <br />
               Growing Businesses.
