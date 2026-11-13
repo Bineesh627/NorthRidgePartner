@@ -1,15 +1,9 @@
-// All the text content of the site lives here, so it can be edited without touching the components.
-import industry1 from '../assets/industry-1.jpg';
-import industry2 from '../assets/industry-2.jpg';
-import industry3 from '../assets/industry-3.jpg';
-
-// Contact email used by the "Book a Discovery Call" buttons
-export const CONTACT_EMAIL = 'northridgepartner@gmail.com';
-export const LINKEDIN_URL = 'https://www.linkedin.com/company/northridgepartner/';
-export const DISCOVERY_CALL_SUBJECT = 'Discovery Call Request';
-export const DISCOVERY_CALL_BODY =
-  'Hi North Ridge Partner team,\n\nI would like to book a discovery call.\n\nName:\nCompany:\nPhone:\nPreferred date & time:\n\nThank you.';
-
+// Shared CTA and contact copy used throughout the site.
+export const CONTACT_EMAIL = 'Recruitment@northridgepartner.com';
+export const PARTNER_CTA_LABEL = 'Talk to our Strategic Talent Partner';
+export const PARTNER_CTA_SUBJECT = 'Strategic Talent Partnership Request';
+export const PARTNER_CTA_BODY =
+  'Hi North Ridge Partner team,\n\nI would like to speak with a strategic talent partner.\n\nName:\nCompany:\nPhone:\nHow can we help?\n\nThank you.';
 export const HIRING_SUBJECT = 'Hiring Requirement';
 export const HIRING_BODY =
   'Hi North Ridge Partner team,\n\nI would like to share a hiring requirement.\n\nName:\nCompany:\nPhone:\nRole(s) to hire:\nNumber of positions:\nLocation:\nTimeline:\n\nThank you.';
@@ -27,8 +21,10 @@ export const NAV_LINKS = [
   { label: 'Contact', href: '#contact' },
 ];
 
+export const LINKEDIN_URL = 'https://www.linkedin.com/company/northridgepartner/';
+
 export const HERO_STATS = [
-  { icon: 'bi-people-fill', title: 'Specialist Talent', sub: 'Across IT, Fintech & Startups' },
+  { icon: 'bi-people-fill', title: 'Specialist Talent', sub: 'Across IT, Fintech, BFSI & Startups' },
   { icon: 'bi-bar-chart-fill', title: 'Data-Driven', sub: 'Hiring Decisions' },
   { icon: 'bi-gem', title: 'Long-Term', sub: 'Partnership Approach' },
 ];
@@ -48,6 +44,11 @@ export const TRUSTED_BY = [
     icon: 'bi-rocket-takeoff',
     title: 'Startups',
     lines: ['Early-stage to Scale-up', 'across all functions'],
+  },
+  {
+    icon: 'bi-bank2',
+    title: 'BFSI',
+    lines: ['Banking, Financial Services,', 'Insurance, Risk & Compliance'],
   },
 ];
 
@@ -111,6 +112,11 @@ export const INDUSTRIES = [
     text: 'Support from first hires to scale, helping you build agile, high-performing teams.',
     image: industry3,
   },
+  {
+    title: 'BFSI',
+    text: 'Talent across banking, financial services, insurance, risk and compliance.',
+    image: industry2,
+  },
 ];
 
 export const IMPACT_CASES = [
@@ -151,7 +157,7 @@ export const DIFFERENTIATOR_ITEMS = [
 ];
 
 export const WHY_ITEMS = [
-  { icon: 'bi-gem', title: 'Industry Expertise', text: 'Deep knowledge of IT, fintech and startups.' },
+  { icon: 'bi-gem', title: 'Industry Expertise', text: 'Deep knowledge of IT, fintech, BFSI and startups.' },
   { icon: 'bi-people-fill', title: 'Founder-Led Engagement', text: 'Personal, commitment-driven approach.' },
   { icon: 'bi-bar-chart-line-fill', title: 'Quality Over Quantity', text: 'Rigorous screening and cultural alignment.' },
   { icon: 'bi-star', title: 'Long-Term Focus', text: 'Post-offer support and ongoing partnership.' },

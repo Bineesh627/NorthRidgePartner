@@ -1,4 +1,5 @@
-import { DISCOVERY_CALL_MAILTO, handleDiscoveryCallClick } from '../utils/discoveryCall';
+import { PARTNER_CTA_LABEL } from '../data/content';
+import { PARTNER_MAILTO, handlePartnerClick } from '../utils/discoveryCall';
 
 export default function Pitch() {
   return (
@@ -13,8 +14,8 @@ export default function Pitch() {
             We partner with AI companies, fintech firms, and startups to solve their most
             critical challenge&mdash;hiring the right talent to scale with confidence.
           </p>
-          <a href={DISCOVERY_CALL_MAILTO} className="pitch-btn" onClick={handleDiscoveryCallClick}>
-            Talk to our Strategic Talent Partner
+          <a href={PARTNER_MAILTO} className="pitch-btn" onClick={handlePartnerClick}>
+            {PARTNER_CTA_LABEL} <i className="bi bi-arrow-right ms-1" aria-hidden="true"></i>
           </a>
         </div>
       </div>

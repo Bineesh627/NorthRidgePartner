@@ -8,15 +8,13 @@ export default function TrustedBy() {
         <p className="trusted-label">Trusted by growing businesses in</p>
         <div className="row g-4">
           {TRUSTED_BY.map((item) => (
-            <div className="col-12 col-md-4 d-flex align-items-center" key={item.title}>
-              <div className="icon-box me-3">
+            <div className="col-12 col-md-6 col-lg-3 d-flex align-items-center" key={item.title}>
+              <div className="icon-box me-3" aria-hidden="true">
                 <i className={`bi ${item.icon}`}></i>
               </div>
-              <div>
+              <div className="trusted-copy">
                 <h6>{item.title}</h6>
-                <p>
-                  <Lines lines={item.lines} />
-                </p>
+                <p><Lines lines={item.lines} /></p>
               </div>
             </div>
           ))}

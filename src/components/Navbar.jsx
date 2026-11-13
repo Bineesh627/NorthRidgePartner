@@ -1,5 +1,7 @@
+import { PARTNER_CTA_LABEL } from '../data/content';
 import { NAV_LINKS } from '../data/content';
 import logo from '../assets/logo-mark.png';
+import { PARTNER_MAILTO, handlePartnerClick } from '../utils/discoveryCall';
 
 export default function Navbar({ activeId, menuOpen, setMenuOpen }) {
   return (
@@ -33,6 +35,9 @@ export default function Navbar({ activeId, menuOpen, setMenuOpen }) {
               </li>
             ))}
           </ul>
+          <a href={PARTNER_MAILTO} className="btn btn-primary btn-rect navbar-partner-cta" onClick={handlePartnerClick}>
+            {PARTNER_CTA_LABEL} <i className="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
     </nav>

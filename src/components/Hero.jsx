@@ -1,5 +1,6 @@
 import heroImg from '../assets/hero.jpg';
-import { DISCOVERY_CALL_MAILTO, HIRING_MAILTO, handleDiscoveryCallClick, handleHiringClick } from '../utils/discoveryCall';
+import { PARTNER_CTA_LABEL } from '../data/content';
+import { HIRING_MAILTO, PARTNER_MAILTO, handlePartnerClick, handleHiringClick } from '../utils/discoveryCall';
 import { HERO_STATS } from '../data/content';
 
 export default function Hero() {
@@ -29,8 +30,8 @@ export default function Hero() {
             </p>
 
             <div className="d-flex flex-wrap gap-3 mb-4">
-              <a href={DISCOVERY_CALL_MAILTO} className="btn btn-primary btn-rect" onClick={handleDiscoveryCallClick}>
-                Talk to our Strategic Talent Partner <i className="bi bi-arrow-right ms-1"></i>
+              <a href={PARTNER_MAILTO} className="btn btn-primary btn-rect" onClick={handlePartnerClick}>
+                {PARTNER_CTA_LABEL} <i className="bi bi-arrow-right ms-1" aria-hidden="true"></i>
               </a>
               <a href={HIRING_MAILTO} className="btn btn-outline-light btn-rect px-4" onClick={handleHiringClick}>
                 Share a Hiring Requirement
@@ -50,6 +51,14 @@ export default function Hero() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="decorative-text" aria-label="People. Potential. Progress.">
+        People
+        <br />
+        <span className="mid">Potential</span>
+        <br />
+        <span className="under">Progress.</span>
       </div>
     </section>
   );

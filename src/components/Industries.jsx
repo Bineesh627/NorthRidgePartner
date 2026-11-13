@@ -20,7 +20,7 @@ export default function Industries() {
 
         <div className="row g-3">
           {INDUSTRIES.map((industry) => (
-            <div className="col-12 col-lg-4" key={industry.title}>
+            <div className="col-12 col-md-6 col-lg-3" key={industry.title}>
               <div
                 className="industry-card"
                 style={{ backgroundImage: `url(${industry.image})` }}
@@ -29,7 +29,7 @@ export default function Industries() {
                   <h4>{industry.title}</h4>
                   <p>{industry.text}</p>
                 </div>
-                <a href="#contact" className="circle-btn industry-btn">
+                <a href="#contact" className="circle-btn industry-btn" aria-label={`Contact us about ${industry.title}`}>
                   <i className="bi bi-arrow-right"></i>
                 </a>
               </div>
