@@ -51,14 +51,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
-      <div className="decorative-text">
-        People
-        <br />
-        <span className="mid">Potential</span>
-        <br />
-        <span className="under">Progress</span>
-      </div>
     </section>
   );
 }

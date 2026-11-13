@@ -1,4 +1,3 @@
-import { DISCOVERY_CALL_MAILTO, handleDiscoveryCallClick } from '../utils/discoveryCall';
 import { NAV_LINKS } from '../data/content';
 import logo from '../assets/logo-mark.png';
 
@@ -34,9 +33,6 @@ export default function Navbar({ activeId, menuOpen, setMenuOpen }) {
               </li>
             ))}
           </ul>
-          <a href={DISCOVERY_CALL_MAILTO} className="btn btn-primary btn-rect" onClick={handleDiscoveryCallClick}>
-            Book a Discovery Call <i className="bi bi-arrow-right ms-1"></i>
-          </a>
         </div>
       </div>
     </nav>
