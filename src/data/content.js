@@ -1,3 +1,7 @@
+import industry1 from '../assets/industry-1.jpg';
+import industry2 from '../assets/industry-2.jpg';
+import industry3 from '../assets/industry-3.jpg';
+
 // Shared CTA and contact copy used throughout the site.
 export const CONTACT_EMAIL = 'Recruitment@northridgepartner.com';
 export const PARTNER_CTA_LABEL = 'Talk to our Strategic Talent Partner';
