@@ -1,5 +1,5 @@
 import heroImg from '../assets/hero.jpg';
-import { DISCOVERY_CALL_MAILTO, HIRING_MAILTO, handleDiscoveryCallClick, handleHiringClick } from '../utils/discoveryCall';
+import { HIRING_MAILTO, handleHiringClick } from '../utils/discoveryCall';
 import { HERO_STATS } from '../data/content';
 
 export default function Hero() {
@@ -28,11 +28,12 @@ export default function Hero() {
               high-growth startups.
             </p>
 
-            <div className="d-flex flex-wrap gap-3 mb-4">
-              <a href={DISCOVERY_CALL_MAILTO} className="btn btn-primary btn-rect" onClick={handleDiscoveryCallClick}>
-                Talk to our Strategic Talent Partner <i className="bi bi-arrow-right ms-1"></i>
+            <div className="d-flex flex-column flex-wrap gap-3 mb-4">
+              <a href="mailto:Recruitment@northridgepartner.com" className="btn btn-primary btn-rect w-auto">
+                Contact us <i className="bi bi-arrow-right ms-1"></i>
               </a>
-              <a href={HIRING_MAILTO} className="btn btn-outline-light btn-rect px-4" onClick={handleHiringClick}>
+              <div className="text-white fw-semibold">Recruitment@northridgepartner.com</div>
+              <a href={HIRING_MAILTO} className="btn btn-outline-light btn-rect px-4 w-auto" onClick={handleHiringClick}>
                 Share a Hiring Requirement
               </a>
             </div>
